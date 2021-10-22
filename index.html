@@ -19,14 +19,17 @@
     <p id="relative">アニメのお題募集！！
         コメント欄または以下の入力フォームにお願いします
     </p>
-    <form action="C:\Users\user\Desktop\html\ブログ入力フォーム送信先.php" method="post" >
-        <div>
-          <label for="message">要望、お題などなど</label><br>
-          <input type="text" />
-        </div>
-  
-        <div class="button">
-          <button type="submit">メッセージを送信</button> 
+   <form action="https://api.staticforms.xyz/submit" method="post">
+  <input type="text" name="name" placeholder="Your Name">
+  <input type="text" name="email" placeholder="Your Email">
+  <textarea name="message"></textarea>
+  <input type="text" name="honeypot" style="display:none">
+  <input type="hidden" name="accessKey" value="aaaaaaaa-bbbb-cccc-dddd-eeee6666kkkk">
+  <input type="hidden" name="subject" value="Contact us from - example.com">
+  <input type="hidden" name="replyTo" value="@">
+  <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+  <input type="submit" value="Submit">
+</form>
     <font color=red></color>
       
     <br><br><br><br><br><br><br><br><br><br>
